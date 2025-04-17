@@ -32,14 +32,14 @@ This repository contains an **AI Agentic Chatbot** application powered by **Lang
 ### 1. 📦 Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+    git clone https://github.com/your-username/your-repo-name.git
+    cd your-repo-name
 
 ### 2. 🧪 Create a Virtual Environment
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\\Scripts\\activate
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 
 3. 📦 Install Requirements
 
