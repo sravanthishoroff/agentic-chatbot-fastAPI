@@ -17,13 +17,14 @@ This repository contains an **AI Agentic Chatbot** application powered by **Lang
 
 ## 📁 Project Structure
 
-├── .env # API keys (OpenAI, Groq, Tavily) 
-├── ai_agent.py # Core agent logic using LangGraph 
-├── backend.py # FastAPI backend server 
-├── frontend.py # Streamlit frontend UI 
-├── requirements.txt # List of Python dependencies 
-└── README.md # Project documentation
-
+```
+├── .env               # API keys (OpenAI, Groq, Tavily) 
+├── ai_agent.py        # Core agent logic using LangGraph 
+├── backend.py         # FastAPI backend server 
+├── frontend.py        # Streamlit frontend UI 
+├── requirements.txt   # List of Python dependencies 
+└── README.md          # Project documentation
+```
 
 ---
 
@@ -32,67 +33,79 @@ This repository contains an **AI Agentic Chatbot** application powered by **Lang
 ### 1. 📦 Clone the Repository
 
 ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+git clone https://github.com/sravanthishoroff/agentic-chatbot-fastAPI.git
+cd agentic-chatbot-fastAPI
+```
 
 ### 2. 🧪 Create a Virtual Environment
 
 ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\\Scripts\\activate
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+```
 
-3. 📦 Install Requirements
-
-```bash
-    pip install -r requirements.txt
-
-4. 🔐 Setup Environment Variables
-    Create a .env file with your API keys:
-
-    OPENAI_API_KEY=your-openai-api-key
-    GROQ_API_KEY=your-groq-api-key
-    TAVILY_API_KEY=your-tavily-api-key
-
-5. 🖥️ Start Backend (FastAPI)
+### 3. 📦 Install Requirements
 
 ```bash
-    python backend.py
+pip install -r requirements.txt
+```
 
-    Runs on: http://127.0.0.1:8000
+### 4. 🔐 Setup Environment Variables
 
-    Test in browser: http://127.0.0.1:8000/docs
+Create a `.env` file with your API keys:
 
-6. 💬 Start Frontend (Streamlit)
+```
+OPENAI_API_KEY=your-openai-api-key
+GROQ_API_KEY=your-groq-api-key
+TAVILY_API_KEY=your-tavily-api-key
+```
 
-    In another terminal/tab:
-    ```bash
-        streamlit run frontend.py
+### 5. 🖥️ Start Backend (FastAPI)
 
-    Access at: http://localhost:8501
+```bash
+python backend.py
+```
 
-🛠️ Supported Models
+- Runs on: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+- Test in browser: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-    Provider	Model
-    OpenAI	gpt-4o-mini
-    Groq	mixtral-8x7b-32768
-    Groq	llama3-70b-8192
+### 6. 💬 Start Frontend (Streamlit)
 
-🧠 Powered By
-    LangChain
+In another terminal/tab:
 
-    LangGraph
+```bash
+streamlit run frontend.py
+```
 
-    Streamlit
+- Access at: [http://localhost:8501](http://localhost:8501)
 
-    FastAPI
+---
 
-    Groq
+## 🛠️ Supported Models
 
-    OpenAI
+| Provider | Model               |
+|----------|---------------------|
+| OpenAI   | gpt-4o-mini         |
+| Groq     | mixtral-8x7b-32768  |
+| Groq     | llama3-70b-8192     |
 
-    Tavily
-### 🙌 Contributing
-    Feel free to open issues or pull requests if you'd like to contribute, improve, or extend the agentic capabilities!
+---
 
+## 🧠 Powered By
 
+- **LangChain**
+- **LangGraph**
+- **Streamlit**
+- **FastAPI**
+- **Groq**
+- **OpenAI**
+- **Tavily**
 
+---
+
+## 🙌 Contributing
+
+Feel free to open issues or pull requests if you'd like to contribute, improve, or extend the agentic capabilities!
